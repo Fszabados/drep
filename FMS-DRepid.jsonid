@@ -1,0 +1,87 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": "CIP119:image",
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": {
+    "@value": "blake2b-256"
+  },
+  "body": {
+    "doNotList": false,
+    "givenName": {
+      "@value": "FMS-DRep"
+    },
+    "motivations": {
+      "@value": "participate in cardano usecase-development and governance"
+    },
+    "objectives": {
+      "@value": "cardano and blockchain enthusiast"
+    },
+    "paymentAddress": {
+      "@value": "addr1q87qjgmfar44xhrcp6m5p7jtpeq8746l5359r30sccrsgjlt2rlyaaa2d97uf6q7n3mmwn6fve9lun0fsaf0k2zs486qwg7kxf"
+    },
+    "qualifications": {
+      "@value": "deeply interested in blockchain, DAG and BFT-consensus mechanism solutions"
+    },
+    "references": [
+      {
+        "@type": "Identity",
+        "label": {
+          "@value": "FMS "
+        },
+        "uri": {
+          "@value": "https://cexplorer.io/pool/pool1upa4pa4qmcgaps4uactx9eas44rfwk9h0rxgua3l4xnf6wevfkt"
+        }
+      }
+    ]
+  }
+}
